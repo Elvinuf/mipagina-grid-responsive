@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Municipal SDE</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="layout">
+
+        <header>            
+                <div class="portada">                               
+                    <div class="overlay"></div>
+                </div>
+                <div class="logo">
+                    <img src="./imagenes/logo.png">
+                </div>  
+                
+            <div class="barra">
+                <input type="text" placeholder="Buscador">
+                <nav>      
+                    <ul class="menu-nav">
+                    <li>
+                        <a href="#" id="hamburguer">☰</a>
+                        <ul>
+                            <li><a href="#">tarjetas</a></li>
+                            <li><a href="#">cuentas</a></li>
+                            <li><a href="#">prestamos</a></li>
+                            <li><a href="#">inversiones</a></li>
+                            <li><a href="#">seguros</a></li>
+                            <li><a href="#">remesas</a></li>
+                            <li><a href="#" id="inicio-sesion">iniciar sesion</a></li>
+                        </ul>
+                    </li>
+                    </ul>      
+                </nav>
+            </div>
+        </header>       
+  
+    <div class="contenedor-central">    
+
+        <nav class="menu-central">
+            <a href="#"> <span><i class="bi bi-display"></i></span> Banco en Línea</a>
+            <a href="#" class="ocultar"> <span ><i class="bi bi-phone"></i></span> App Móvil</a>
+            <a href="#"> <span><i class="bi bi-credit-card"></i></span> Pagos Servicios</a>
+            <a href="#"> <span><i class="bi bi-globe"></i></span> Transferencias Interbancarias</a>
+            <a href="#" class="ocultar"> <span><i class="bi bi-receipt-cutoff"></i></span> Consulta de Balance</a>
+
+            <h4 class="ocultar">atencion al cliente</h4>
+            <a href="#" class="ocultar"><span class="material-symbols-outlined">account_balance</span> Sucursales y Cajeros</a>
+            <a href="#" class="ocultar"><span class="material-symbols-outlined">assured_workload</span> Subagentes Bancarios</a>
+            <a href="#" class="ocultar"><span class="material-symbols-outlined">calendar_clock</span> Horarios de Atención</a>
+            <a href="#"><span class="material-symbols-outlined">support_agent</span> Centro de Ayuda</a>
+            <a href="#" class="ocultar"><span class="material-symbols-outlined">contract_edit</span> Reclamos y Sugerencias</a>
+
+                <h4 class="ocultar">servicios municipales</h4>
+            <a href="#"> <span><ion-icon name="cash-outline"></ion-icon></span> Pago de Arbitrios</a>
+            <a href="#" class="ocultar"><span><ion-icon name="home-outline"></ion-icon></span> Impuesto Inmobiliario</a>
+            <a href="#" class="ocultar"><span><ion-icon name="newspaper-outline"></ion-icon></span> Licencias y Permisos</a>
+            <a href="#" class="ocultar"><span><ion-icon name="business-outline"></ion-icon></span> Servicios del Ayuntamiento</a>
+        </nav>      
+
+        <div class="carrusel">
+        <div class="slides">
+            <img src="imagenes/estafas.png" alt="">
+            <img src="imagenes/inflacion.png" alt="">
+            <img src="imagenes/edificio.png" alt="">
+            <img src="imagenes/sucursales.png" alt="">            
+        </div>
+        </div>
+
+              
+        <div class="articulos">
+
+            <h4>informe financiero mensual</h4>
+
+            <div class="ingresos">
+                <span class="material-symbols-outlined">paid</span>
+                <h4>ingresos</h4>
+                <h5>ingresos totales</h5>
+                <h6>enero 2026</h6>
+                <h3>$61,250 mm</h3>                
+                <hr>                
+                <h5>ingresos totales</h5>
+                <h6>enero 2026</h6>                                
+
+                <table class="tabla-tributarios">
+                    <tr>
+                        <th class="text-left"><a href="#">tributarios</a></th>
+                        <th class="text-right">50,780 mm</th>
+                    </tr>
+                        <td class="text-left"><span>variacion</span></td> 
+                        <td class="text-right">+5,9%</td>                    
+                </table>
+                <hr>
+                
+                <table class="tabla-notributarios">
+                    <tr>
+                        <th class="text-left"><a href="#">no tributarios</a></th>
+                        <th class="text-right">10,470 mm</th>
+                    </tr>
+                        <td class="text-left"><span>variacion</span></td> 
+                        <td class="text-right">+2,4%</td>                    
+                </table>                        
+            </div>
+
+            <div class="gastos">
+                <span class="material-symbols-outlined">receipt_long</span>
+                <h4>gastos</h4>
+                <h5>gastos total</h5>
+                <h6>enero 2026</h6>
+                <h3>$65,980 mm</h3>                
+                <hr>                
+                <h5>gasto total</h5>
+                <h6>enero 2026</h6>                                
+
+                <table class="corriente">
+                    <tr>
+                        <th class="text-left"><a href="#">corriente</a></th>
+                        <th class="text-right">50,250 mm</th>
+                    </tr>
+
+                    <tr>
+                        <td class="text-left"><span>personal</span></td> 
+                        <td class="text-right">+5,8%</td>      
+                    </tr>
+
+                    <tr>
+                        <td class="text-left"><span>otros</span></td> 
+                        <td class="text-right">+6,5%</td> 
+                    </tr>                                               
+                </table>
+                <hr>
+                
+                <table class="de-capital">
+                    <tr>
+                        <th class="text-left"><a href="#">de capital</a></th>
+                        <th class="text-right">15,730 mm</th>
+                    </tr>
+                        <td class="text-left"><span></span></td> 
+                        <td class="text-right">+4,5%</td>                    
+                </table>                        
+            </div>
+
+            <div class="indicadores">
+                <span class="material-symbols-outlined">finance</span>
+                <h4>indicadores</h4>
+                <h5>balance fiscal</h5>                
+                <h3>-$4,730 mm</h3>                           
+                <h6>(-1.8% del PIB)</h6>
+                <hr> 
+                <h5>deuda publica</h5>                
+                <h3>$15,830 mm</h3>                           
+                <h6>(58,2% del PIB)</h6>
+                <hr> 
+                <h5>deficit primario</h5>                
+                <h3>-$2,100 mm</h3>                           
+                <h6>(-0.8% del PIB)</h6>
+                <hr> 
+                <h5>inversion publica</h5>                
+                <h3>$12,500 mm</h3>                           
+                <h6>(4,6% del PIB)</h6>                         
+            </div>
+            
+            <div class="impacto">
+                <span class="material-symbols-outlined">arrows_output</span>
+                <h4>impacto</h4>
+                <h5>Endeudamiento</h5>                
+                <h3>$2,320 mm</h3>                           
+                <h6>+2,0%</h6>
+                <hr> 
+                <h5>deficit fiscal</h5>                
+                <h3>-$580 mm</h3> 
+
+                <table>
+                    <tr>
+                        <th>+1,3%</th>
+                        <th><span class="material-symbols-outlined">arrow_right</span></th>
+                        <th>+1,38%</th>
+                    </tr>
+                </table>
+                <hr>
+                <h5>deuda/PIB</h5> 
+                <table>
+                    <tr>
+                        <th>dic 2025</th>
+                        <th><span class="material-symbols-outlined">arrow_right</span></th>
+                        <th>58,2%</th>
+                    </tr>
+
+                    <tr>
+                        <th>dic 2025</th>
+                        <th><span class="material-symbols-outlined">arrow_right</span></th>
+                        <th>58,2%</th>
+                    </tr>
+                </table>
+
+                <h5>inversion eficiente</h5>                
+                <h3>70%</h3> 
+            </div>                                                         
+        </div>            
+        
+
+        <div class="avisos">
+            <header><h2>avisos</h2></header>
+            
+                <div class="aviso1">
+                    <div class="fecha">
+                        <h4>Febrero 20, 2026</h4>
+                    </div>
+
+                    <div class="info">
+                        <h5>BSDE emite billete de RD$ 100.00, año 2025</h5>
+                    </div>
+                </div>
+            
+                <div class="aviso2">
+                    <div class="fecha">
+                        <h4>Febrero 13, 2026</h4>
+                    </div>
+
+                    <div class="info">
+                        <h5>BSDE emite billete de RD$ 100.00, año 2025</h5>
+                    </div>
+                </div>
+
+                <div class="aviso3">
+                    <div class="fecha">
+                        <h4>Enero 27, 2026</h4>
+                    </div>
+
+                    <div class="info">
+                        <h5>BSDE emite billete de RD$ 100.00, año 2025</h5>
+                    </div>
+                </div>
+
+                <div class="aviso4">
+                    <div class="fecha">
+                        <h4>Febrero 13, 2026</h4>
+                    </div>
+
+                    <div class="info">
+                        <h5>Aviso de horario especial por motivo de las festividades navideñas</h5>
+                    </div>
+                </div>
+
+                <div class="aviso5">
+                    <div class="fecha">
+                        <h4>Diciembre 22, 2025</h4>
+                    </div>
+
+                    <div class="info">
+                        <h5>Autoridades económicas y del BCRD autorizaron la publicación del Staff Report del FMI</h5>
+                    </div>
+                </div>
+
+                <div class="aviso6">
+                    <div class="fecha">
+                        <h4>Noviembre 19, 2025</h4>
+                    </div>
+
+                    <div class="info">
+                        <h5>BSDE emite billetes de RD$500.00, año 2024</h5>
+                    </div>
+                </div>
+
+                <div class="aviso7">
+                    <div class="fecha">
+                        <h4>Noviembre 17, 2025</h4>
+                    </div>
+
+                    <div class="info">
+                        <h5>BSDE informa el restablecimiento del servicio de su página web</h5>
+                    </div>
+                </div>
+
+                <div class="aviso8">
+                    <div class="fecha">
+                        <h4>Octubre 30, 2025</h4>
+                    </div>
+
+                    <div class="info">
+                        <h5>BSDE anuncia la nueva fecha para sus actos conmemorativos del 78 aniversario</h5>
+                    </div>
+                </div>
+
+                <div class="aviso9">
+                    <div class="fecha">
+                        <h4>Octubre 27, 2025</h4>
+                    </div>
+
+                    <div class="info">
+                        <h5>BSDE suspende, hasta tanto mejoren las condiciones climatológicas, los actos con motivo de su 78 aniversario</h5>
+                    </div>
+                </div>
+
+                <div class="aviso10">
+                    <div class="fecha">
+                        <h4>Octubre 24, 2025</h4>
+                    </div>
+
+                    <div class="info">
+                        <h5>BSDE reprograma los actos conmemorativos de su 78 aniversario</h5>
+                    </div>
+                </div>            
+
+        </div>
+     
+    </div>    
+
+    <footer>
+        <div class="pie">
+            <div class="logos">
+                <img src="imagenes/sde-logo.png">
+                <img src="imagenes/bsde-logo.png">                
+            </div>
+
+            <div class="direccion">
+                <h4>Banco Municipal Santo Domingo Este</h4>
+                <p>Carretera Mella #49, Esq. San Vicente de Paúl,</p>
+                <p>Santo Domingo Este, Republica Dominicana</p>
+            </div>
+
+        <div class="links">
+            <div class="contacto">
+                <span><i class="bi bi-telephone-fill"></i></span><a href="#">(829) 539-8958</a> <p>|</p>
+                <span><i class="bi bi-envelope-fill"></i></span><a href="#">info@banmunicipal.gov.do</a>                
+            </div>
+
+            <div class="enlaces">
+                <a href="#">Terminos De Uso</a> <p>|</p>
+                <a href="#">Politicas De Privacidad</a> <p>|</p> 
+                <a href="#">Preguntas Frecuentes</a> <p>|</p>
+                <a href="#">API</a>
+            </div>
+        </div>
+
+            <div class="derechos">
+                <strong>© 2026. Todos los derechos reservados</strong>                                
+                <p>Republica Dominicana</p>
+            </div>
+
+            <div class="sujeto">
+                <img src="imagenes/sujeto.png">
+            </div>        
+
+        </div>
+    </footer>
+        
+
+</div>
+
+
+
+
+<!-- 
+
+    <main>        
+        
+        <div class="contenedor-partecentral">            
+
+        <div class="carrusel">
+        <div class="slides">
+            <img src="imagenes/estafas.png" alt="">
+            <img src="imagenes/inflacion.png" alt="">
+            <img src="imagenes/edificio.png" alt="">
+            <img src="imagenes/sucursales.png" alt="">            
+        </div>
+        </div>
+
+        <h4>informe financiero mensual</h4>
+
+        <div class="articulos">
+
+            <div class="ingresos">
+                <span class="material-symbols-outlined">paid</span>
+                <h4>ingresos</h4>
+                <h5>ingresos totales</h5>
+                <h6>enero 2026</h6>
+                <h3>$61,250 mm</h3>                
+                <hr>                
+                <h5>ingresos totales</h5>
+                <h6>enero 2026</h6>                                
+
+                <table class="tabla-tributarios">
+                    <tr>
+                        <th class="text-left"><a href="#">tributarios</a></th>
+                        <th class="text-right">50,780 mm</th>
+                    </tr>
+                        <td class="text-left"><span>variacion</span></td> 
+                        <td class="text-right">+5,9%</td>                    
+                </table>
+                <hr>
+                
+                <table class="tabla-notributarios">
+                    <tr>
+                        <th class="text-left"><a href="#">no tributarios</a></th>
+                        <th class="text-right">10,470 mm</th>
+                    </tr>
+                        <td class="text-left"><span>variacion</span></td> 
+                        <td class="text-right">+2,4%</td>                    
+                </table>
+                        
+            </div>
+
+            <div class="gastos">
+                <span class="material-symbols-outlined">receipt_long</span>
+                <h4>gastos</h4>
+                <h5>gastos total</h5>
+                <h6>enero 2026</h6>
+                <h3>$65,980 mm</h3>                
+                <hr>                
+                <h5>gasto total</h5>
+                <h6>enero 2026</h6>                                
+
+                <table class="corriente">
+                    <tr>
+                        <th class="text-left"><a href="#">corriente</a></th>
+                        <th class="text-right">50,250 mm</th>
+                    </tr>
+
+                    <tr>
+                        <td class="text-left"><span>personal</span></td> 
+                        <td class="text-right">+5,8%</td>      
+                    </tr>
+
+                    <tr>
+                        <td class="text-left"><span>otros</span></td> 
+                        <td class="text-right">+6,5%</td> 
+                    </tr>
+                    
+                            
+                </table>
+                <hr>
+                
+                <table class="de-capital">
+                    <tr>
+                        <th class="text-left"><a href="#">de capital</a></th>
+                        <th class="text-right">15,730 mm</th>
+                    </tr>
+                        <td class="text-left"><span></span></td> 
+                        <td class="text-right">+4,5%</td>                    
+                </table>
+                        
+            </div>
+
+
+            <div class="indicadores">
+                <span class="material-symbols-outlined">finance</span>
+                <h4>indicadores</h4>
+                <h5>balance fiscal</h5>                
+                <h3>-$4,730 mm</h3>                           
+                <h6>(-1.8% del PIB)</h6>
+                <hr> 
+                <h5>deuda publica</h5>                
+                <h3>$15,830 mm</h3>                           
+                <h6>(58,2% del PIB)</h6>
+                <hr> 
+                <h5>deficit primario</h5>                
+                <h3>-$2,100 mm</h3>                           
+                <h6>(-0.8% del PIB)</h6>
+                <hr> 
+                <h5>inversion publica</h5>                
+                <h3>$12,500 mm</h3>                           
+                <h6>(4,6% del PIB)</h6>                         
+            </div>            
+            
+            <div class="impacto">
+                <span class="material-symbols-outlined">arrows_output</span>
+                <h4>impacto</h4>
+                <h5>Endeudamiento</h5>                
+                <h3>$2,320 mm</h3>                           
+                <h6>+2,0%</h6>
+                <hr> 
+                <h5>deficit fiscal</h5>                
+                <h3>-$580 mm</h3> 
+
+                <table>
+                    <tr>
+                        <th>+1,3%</th>
+                        <th><span class="material-symbols-outlined">arrow_right</span></th>
+                        <th>+1,38%</th>
+                    </tr>
+                </table>
+                <hr>
+                <h5>deuda/PIB</h5> 
+                <table>
+                    <tr>
+                        <th>dic 2025</th>
+                        <th><span class="material-symbols-outlined">arrow_right</span></th>
+                        <th>58,2%</th>
+                    </tr>
+
+                    <tr>
+                        <th>dic 2025</th>
+                        <th><span class="material-symbols-outlined">arrow_right</span></th>
+                        <th>58,2%</th>
+                    </tr>
+                </table>
+
+                <h5>inversion eficiente</h5>                
+                <h3>70%</h3> 
+
+            </div>
+
+        </div>
+
+        <div class="avisos">
+            <header>avisos</header>
+            <main>            
+            <div class="contenedor-avisos">
+                              
+                 <div class="aviso1">
+                    <div class="fecha">
+                        <h4>Febrero 20, 2026</h4>
+                    </div>
+
+                    <div class="info">
+                        <h5>BSDE emite billete de RD$ 100.00, año 2025</h5>
+                    </div>
+                </div>
+
+                <div class="aviso2">
+                    <div class="fecha">
+                        <h4>Febrero 13, 2026</h4>
+                    </div>
+
+                    <div class="info">
+                        <h5>BSDE emite billete de RD$ 100.00, año 2025</h5>
+                    </div>
+                </div>
+
+                <div class="aviso3">
+                    <div class="fecha">
+                        <h4>Enero 27, 2026</h4>
+                    </div>
+
+                    <div class="info">
+                        <h5>BSDE emite billete de RD$ 100.00, año 2025</h5>
+                    </div>
+                </div>
+
+                <div class="aviso4">
+                    <div class="fecha">
+                        <h4>Febrero 13, 2026</h4>
+                    </div>
+
+                    <div class="info">
+                        <h5>Aviso de horario especial por motivo de las festividades navideñas</h5>
+                    </div>
+                </div>
+
+                <div class="aviso5">
+                    <div class="fecha">
+                        <h4>Diciembre 22, 2025</h4>
+                    </div>
+
+                    <div class="info">
+                        <h5>Autoridades económicas y del BCRD autorizaron la publicación del Staff Report del FMI</h5>
+                    </div>
+                </div>
+
+                <div class="aviso6">
+                    <div class="fecha">
+                        <h4>Noviembre 19, 2025</h4>
+                    </div>
+
+                    <div class="info">
+                        <h5>BSDE emite billetes de RD$500.00, año 2024</h5>
+                    </div>
+                </div>
+
+                <div class="aviso7">
+                    <div class="fecha">
+                        <h4>Noviembre 17, 2025</h4>
+                    </div>
+
+                    <div class="info">
+                        <h5>BSDE informa el restablecimiento del servicio de su página web</h5>
+                    </div>
+                </div>
+
+                <div class="aviso8">
+                    <div class="fecha">
+                        <h4>Octubre 30, 2025</h4>
+                    </div>
+
+                    <div class="info">
+                        <h5>BSDE anuncia la nueva fecha para sus actos conmemorativos del 78 aniversario</h5>
+                    </div>
+                </div>
+
+                <div class="aviso9">
+                    <div class="fecha">
+                        <h4>Octubre 27, 2025</h4>
+                    </div>
+
+                    <div class="info">
+                        <h5>BSDE suspende, hasta tanto mejoren las condiciones climatológicas, los actos con motivo de su 78 aniversario</h5>
+                    </div>
+                </div>
+
+                <div class="aviso10">
+                    <div class="fecha">
+                        <h4>Octubre 24, 2025</h4>
+                    </div>
+
+                    <div class="info">
+                        <h5>BSDE reprograma los actos conmemorativos de su 78 aniversario</h5>
+                    </div>
+                </div>
+                            
+
+            </div>
+            </main>
+
+        </div>
+
+        </div>    
+
+        <div class="contenedor-derecho">
+
+        <h4>informacion institucional</h4>
+
+        <ul>            
+            <li><a href="#">Quiénes Somos</a></li>
+            <li><a href="#">Misión y Visión</a></li>
+            <li><a href="#">Junta Municipal</a></li>
+                <ul>
+                    <li><a href="#">Autoridades y Funcionarios</a></li>
+                    <li><a href="#">Estructura Organizacional</a></li>
+                </ul>
+            <li><a href="#">Transparencia</a></li>
+            <li><a href="#">Memoria Anual</a></li>
+                <ul>
+                    <li><a href="#">Informe de Gestión</a></li>
+                    <li><a href="#">Resultados y Logros</a></li>
+                </ul>
+        </ul>
+
+        <hr>
+
+        <h4>entrevista al alcande municipal</h4>    
+    <iframe width="200" height="150"
+src="https://www.youtube.com/embed/GUOAKM5DeEE"
+title="YouTube video player"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
+
+    <h4>lo que es y hace el banco municipal</h4>    
+    <iframe width="200" height="150" src="https://www.youtube.com/embed/qn0Z-4tGw3k?si=SsbhH5dNbVhHhX_-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>
+    
+
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="pie">
+            <div class="logos">
+                <img src="imagenes/sde-logo.png">
+                <img src="imagenes/bsde-logo.png">                
+            </div>
+
+            <div class="direccion">
+                <h4>Banco Municipal Santo Domingo Este</h4>
+                <p>Carretera Mella #49, Esq. San Vicente de Paúl,</p>
+                <p>Santo Domingo Este, Republica Dominicana</p>
+            </div>
+
+            <div class="links">
+            <div class="contacto">
+                <span><i class="bi bi-telephone-fill"></i></span><a href="#">(829) 539-8958</a> <p>|</p>
+                <span><i class="bi bi-envelope-fill"></i></span><a href="#">info@banmunicipal.gov.do</a>                
+            </div>
+
+            <div class="enlaces">
+                <a href="#">Terminos De Uso</a> <p>|</p>
+                <a href="#">Politicas De Privacidad</a> <p>|</p>
+                <a href="#">Preguntas Frecuentes</a> <p>|</p>
+                <a href="#">API</a>
+            </div>
+            </div>
+
+            <div class="derechos">
+                <strong>© 2026. Todos los derechos reservados</strong>
+                <p>Republica Dominicana</p>
+            </div>
+
+            <div class="sujeto">
+                <img src="imagenes/sujeto.png">
+            </div>
+            
+
+
+        </div>
+    </footer>
+    
+-->
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>
