@@ -74,6 +74,10 @@ nav ul{
   border-radius: 5px;
 }
 
+.menu-nav h4{
+    justify-content: center;
+}
+
 a{
   text-decoration: none;
   color: #000;
@@ -842,7 +846,7 @@ header{
   display: none;
 }
 
-                                                                /*MENU HORIZONTAL*/
+                                                                /*MENU DESPLEGABLE CONVERTIDO EN MENU HORIZONTAL*/
   
 .menu-nav{    
   align-items: center;
@@ -851,7 +855,7 @@ header{
   height: auto;
   flex-wrap: wrap;
   background-color: transparent;
-}                                                             
+}  
 
 #hamburguer ul{
   display: flex;
@@ -859,7 +863,7 @@ header{
   font-weight: bolder;
   color: #fff;
   justify-content: center;    
-}      
+}   
 
 #hamburguer{
     display: none;    
@@ -904,14 +908,40 @@ header{
     color: #a8a8a8;
 }
 
-                                                     /*MENU CENTRAL*/
+                                                            /*CONTENEDOR CENTRAL PARA DAR ESTRUCTURA GRID*/       
 
 .contenedor-central{
     display: grid;
-    grid-template-columns: repeat(20, auto-fit);   
+    grid-template-columns: 270px 2fr 50px;  
     gap: 10px;
-    margin: 0 50px;
+    margin: 0 10px;    
+    grid-template-areas:
+    "navbar carrusel  ."
+    "navbar articulos ."
+    ".      avisos    ."    
+    ;
 }
+
+.menu-central{
+    grid-area: navbar;    
+}
+
+.carrusel{
+    grid-area: carrusel;
+}
+
+.articulos{
+    grid-area: articulos;
+}
+
+.avisos{
+    grid-area: avisos;
+}
+
+
+
+
+                                                                /*MENU CENTRAL*/
 
 .menu-central{
   box-sizing: border-box;
@@ -920,9 +950,8 @@ header{
   gap: 5px;
   font-family: sans-serif;
   text-transform: capitalize;
-  font-size: 17px;
-  width: auto;
-  grid-column: 1/2;
+  font-size: 17px;  
+  height: 0;  
 }
 
 .menu-central a{  
@@ -930,6 +959,8 @@ header{
   padding: 10px;  
   border-radius: 5px;
   color: #000; 
+  width: 270px;   
+  height: 40px;
 }
 
 .menu-central a:hover{  
@@ -939,9 +970,8 @@ header{
 }
 .ocultar{
     display:unset;
+    width: 250px;
 }
-
-
 
                                                 /*CARRUSEL*/
 
@@ -954,9 +984,7 @@ header{
     width: 100%;    
     overflow: hidden;
     margin: auto;
-    border: 1px solid #000;    
-    grid-column: 2/3;
-    grid-row: 1/2;
+    border: 1px solid #000;   
 }
 
 /* Contenedor de imágenes */
@@ -1037,12 +1065,80 @@ body{
     background-color: #686666;
 }
 
-    .logo img{
+.logo img{
     width: 500px;
     position: absolute;
     top: 80px;
     left: 20px;
 }
+
+                                                            /*MENU DESPLEGABLE CONVERTIDO EN NAVBAR*/
+nav ul{
+  list-style: none;
+  background-color: #fff;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;  
+  border-radius: 5px;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+.menu-nav{
+  display: flex;  
+  justify-content: center;    
+}
+
+.menu-nav li{
+  position: relative;
+}
+
+.menu-nav ul{
+  position: absolute;
+  min-width: 180px;  
+  display: none;   
+}
+
+.menu-nav{
+  display: flex;
+  align-items: center;
+  width: 40px ;
+  height: 40px;
+}
+
+.menu-nav > li > ul{
+  top: 100%;
+  right: 0;  
+}
+
+.menu-nav a{
+  display: flex;  
+  padding: 15px;
+  white-space: nowrap;    
+}
+
+#hamburguer{
+  font-size: 15px;
+  font-weight: bolder;
+  color: #000;
+}
+
+
+.menu-nav li a:hover{
+  background: #d1d1d1;
+}
+
+.menu-nav li:hover > ul{
+  display: block;
+  border-radius: 0px;
+}
+
+
+
+
 
 }
 
