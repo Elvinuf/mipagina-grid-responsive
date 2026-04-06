@@ -923,8 +923,7 @@ header{
 }
 
 .menu-nav li{
-  position: relative; 
-  display: unset; 
+  position: relative;   
 }
 
 .menu-nav ul{  
@@ -934,7 +933,7 @@ header{
   gap: 5px;
   background: #bd9737;  
   flex-wrap: wrap;  
-  padding: 5px;
+  padding: 5px;  
 }
 
 .menu-nav a{
@@ -943,7 +942,8 @@ header{
   white-space: nowrap;  
   flex-wrap: wrap;
   padding: 10px;
-  font-size: 12px;    
+  font-size: 14px;     
+  text-transform: uppercase;  
 }
 
 #inicio-sesion{
@@ -963,9 +963,8 @@ header{
 }
 
 .menu-nav li:hover > ul{    
-  display: block;
+  display: flex;
   border-radius: 0px;
-  display: none;
 }
 
 
